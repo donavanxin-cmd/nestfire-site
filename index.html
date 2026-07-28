@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NestFIRE — Will you have enough?</title>
+  <meta name="description" content="NestFIRE projects your spending, income, savings and investments forward year by year to reveal your financial independence date. Your data stays on your device." />
+  <meta property="og:title" content="NestFIRE — Will you have enough?" />
+  <meta property="og:description" content="Plan financial independence, track net worth, and see when you can retire early." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nestfire.app" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #1B3A6B;
+      --teal: #00B4A6;
+      --ink:  #1a1a2e;
+      --muted:#4b5563;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f5f6fa;
+      color: var(--ink);
+      line-height: 1.7;
+    }
+
+    /* ── Hero ── */
+    header {
+      background: var(--navy);
+      color: #fff;
+      padding: 64px 24px 56px;
+      text-align: center;
+    }
+    .logo {
+      display: inline-block;
+      border: 4px solid #fff;
+      border-radius: 18px;
+      padding: 14px 20px;
+      margin-bottom: 28px;
+      text-align: left;
+    }
+    .logo span {
+      display: block;
+      font-size: 2.6rem;
+      font-weight: 900;
+      letter-spacing: 1px;
+      line-height: 0.88;
+    }
+    .logo .nest { color: #fff; }
+    .logo .fire { color: var(--teal); }
+
+    header h1 { font-size: 1.9rem; font-weight: 800; margin-bottom: 14px; }
+    header p  { font-size: 1.05rem; opacity: 0.85; max-width: 560px; margin: 0 auto; }
+
+    .badges { margin-top: 30px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .badge {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 999px;
+      padding: 8px 18px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    /* ── Body ── */
+    main { max-width: 760px; margin: 44px auto; padding: 0 20px 60px; }
+
+    section { margin-bottom: 34px; }
+    h2 {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #6b7280;
+      margin-bottom: 16px;
+    }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
+
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 22px 24px;
+      border: 1px solid #e4e7ef;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+    .card h3 { font-size: 0.98rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+    .card p  { font-size: 0.9rem; color: var(--muted); }
+
+    .lead {
+      background: #fff;
+      border-left: 4px solid var(--teal);
+      border-radius: 0 12px 12px 0;
+      padding: 22px 26px;
+      font-size: 1rem;
+      color: var(--ink);
+    }
+
+    .privacy {
+      background: #eef2ff;
+      border-radius: 14px;
+      padding: 24px 26px;
+      text-align: center;
+    }
+    .privacy h3 { color: var(--navy); font-size: 1.05rem; font-weight: 800; margin-bottom: 8px; }
+    .privacy p  { font-size: 0.92rem; color: var(--muted); }
+
+    .cta { text-align: center; margin-top: 8px; }
+    .cta p { font-size: 0.92rem; color: var(--muted); }
+
+    .disclaimer { font-size: 0.8rem; color: #9ca3af; margin-top: 26px; text-align: center; }
+
+    footer {
+      text-align: center;
+      font-size: 0.82rem;
+      color: #9ca3af;
+      padding: 0 20px 44px;
+    }
+    footer a { color: var(--navy); text-decoration: none; margin: 0 8px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <span class="nest">NEST</span>
+    <span class="fire">FIRE</span>
+  </div>
+  <h1>Will you have enough?</h1>
+  <p>
+    NestFIRE projects your spending, income, savings and investments forward — year by year —
+    to reveal the age you could stop working.
+  </p>
+  <div class="badges">
+    <div class="badge">Your data stays on your phone</div>
+    <div class="badge">No account needed</div>
+    <div class="badge">Your currency</div>
+  </div>
+</header>
+
+<main>
+
+  <section>
+    <div class="lead">
+      Spend trackers show you what you spent. Banking apps show your balance.
+      Neither answers the question that actually matters — <strong>will it be enough, and when?</strong>
+      NestFIRE turns everyday tracking into that answer.
+    </div>
+  </section>
+
+  <section>
+    <h2>What it does</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Forecast to age 95</h3>
+        <p>A year-by-year, inflation-adjusted cash flow from today onward, with a live score telling you whether your plan is actually funded.</p>
+      </div>
+      <div class="card">
+        <h3>Track what's real</h3>
+        <p>Log spending and income in seconds. Set budgets by category and see actual versus planned at a glance.</p>
+      </div>
+      <div class="card">
+        <h3>Your whole picture</h3>
+        <p>Savings, investments and property together — each compounding at its own growth rate.</p>
+      </div>
+      <div class="card">
+        <h3>Life isn't flat</h3>
+        <p>Map every income stream with a start and end age — salary until 60, a pension from 65, rental income throughout.</p>
+      </div>
+      <div class="card">
+        <h3>What-if planning</h3>
+        <p>Retire five years earlier. Save more. Downsize. See each decision move your financial independence date instantly.</p>
+      </div>
+      <div class="card">
+        <h3>Stress-test it</h3>
+        <p>Model inflation from 1.5% to 6.2% and stretch your horizon to age 110 — because plans meet reality.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="privacy">
+      <h3>🔒 Private by design</h3>
+      <p>
+        Every figure you enter stays on your device. No account, no cloud sync, no advertising,
+        and no tracking across other apps — and no analytics on your financial data. Move devices
+        whenever you like with an encrypted backup only you can open.
+      </p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Get NestFIRE</h2>
+    <p>Coming soon to the App Store and Google Play. Try Pro free for 30 days — no payment method required.</p>
+  </section>
+
+  <p class="disclaimer">
+    NestFIRE is a personal planning tool, not a licensed financial adviser. Projections are
+    mathematical estimates based on the figures you enter and will differ from actual outcomes.
+    Consult a qualified financial professional before making decisions.
+  </p>
+
+</main>
+
+<footer>
+  <p>
+    <a href="/privacy-policy">Privacy Policy</a> ·
+    <a href="/terms">Terms of Use</a> ·
+    <a href="mailto:hello@canfire.app">Contact</a>
+  </p>
+  <p style="margin-top:10px">© 2026 NestFIRE. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
