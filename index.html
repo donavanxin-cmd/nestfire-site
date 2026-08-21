@@ -6,7 +6,7 @@
   <title>NestFIRE — Will you have enough?</title>
   <meta name="description" content="NestFIRE projects your spending, income, savings and investments forward year by year to reveal your financial independence date. Your data stays on your device." />
   <meta property="og:title" content="NestFIRE — Will you have enough?" />
-  <meta property="og:description" content="Plan financial independence, track net worth, and see when you could retire early. A personal planning tool — projections are estimates, not financial advice." />
+  <meta property="og:description" content="Plan financial independence, track net worth, and see when you can retire early." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://nestfire.app" />
   <style>
@@ -109,19 +109,29 @@
 
     .cta { text-align: center; margin-top: 8px; }
     .cta p { font-size: 0.92rem; color: var(--muted); }
-
-    .disclaimer {
+    .store-links { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin: 18px 0 12px; }
+    .store-btn {
+      display: inline-block;
+      background: var(--navy);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
       font-size: 0.95rem;
-      color: #4b5563;
-      background: #fff;
-      border: 1px solid #e4e7ef;
-      border-left: 4px solid var(--teal);
-      border-radius: 0 12px 12px 0;
-      padding: 18px 22px;
-      margin-top: 26px;
-      text-align: left;
+      padding: 13px 26px;
+      border-radius: 10px;
     }
-    .disclaimer strong { color: var(--ink); }
+    .store-btn:hover { opacity: 0.9; }
+    .store-soon {
+      display: inline-block;
+      border: 1px solid #cbd5e1;
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 12px 25px;
+      border-radius: 10px;
+    }
+
+    .disclaimer { font-size: 0.8rem; color: #9ca3af; margin-top: 26px; text-align: center; }
 
     footer {
       text-align: center;
@@ -144,9 +154,6 @@
     NestFIRE projects your spending, income, savings and investments forward — year by year —
     to reveal the age you could stop working.
   </p>
-  <p style="margin-top:14px;font-size:0.92rem;opacity:0.8">
-    A planning tool, not financial advice — projections are estimates based on figures you enter.
-  </p>
   <div class="badges">
     <div class="badge">Your data stays on your phone</div>
     <div class="badge">No account needed</div>
@@ -159,8 +166,8 @@
   <section>
     <div class="lead">
       Spend trackers show you what you spent. Banking apps show your balance.
-      NestFIRE projects what those figures mean for the years ahead — <strong>will it be enough,
-      and when?</strong>
+      Neither answers the question that actually matters — <strong>will it be enough, and when?</strong>
+      NestFIRE turns everyday tracking into that answer.
     </div>
   </section>
 
@@ -207,14 +214,17 @@
 
   <section class="cta">
     <h2>Get NestFIRE</h2>
-    <p>Coming soon to the App Store and Google Play. Try Pro free for 30 days — no payment method required.</p>
+    <div class="store-links">
+      <a class="store-btn" href="https://apps.apple.com/app/id6795230272">Download on the App Store</a>
+      <span class="store-soon">Google Play — coming soon</span>
+    </div>
+    <p>Try Pro free for 30 days — no payment method required.</p>
   </section>
 
   <p class="disclaimer">
-    <strong>NestFIRE is a personal planning tool, not a licensed financial adviser.</strong>
-    Nothing in the app constitutes financial advice. Projections are mathematical estimates based
-    on the figures you enter, not predictions, and will differ from actual outcomes. Consult a
-    qualified financial professional before making decisions.
+    NestFIRE is a personal planning tool, not a licensed financial adviser. Projections are
+    mathematical estimates based on the figures you enter and will differ from actual outcomes.
+    Consult a qualified financial professional before making decisions.
   </p>
 
 </main>
@@ -225,8 +235,7 @@
     <a href="/terms">Terms of Use</a> ·
     <a href="mailto:hello@canfire.app">Contact</a>
   </p>
-  <p style="margin-top:10px">© 2026 DS-Lab. All rights reserved.</p>
-  <p style="margin-top:6px">NestFIRE and CanFIRE are both published by DS-Lab; hello@canfire.app is the contact address for both.</p>
+  <p style="margin-top:10px">© 2026 NestFIRE. All rights reserved.</p>
 </footer>
 
 </body>
